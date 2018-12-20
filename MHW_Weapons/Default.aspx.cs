@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,6 +12,7 @@ namespace MHW_Weapons
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string strConnString = ConfigurationManager.ConnectionStrings["MySqlConnectionString"].ConnectionString;
 
         }
     }
